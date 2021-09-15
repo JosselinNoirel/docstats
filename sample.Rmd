@@ -1,0 +1,28 @@
+---
+title: "La fonction `sample`"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, comment=TRUE)
+```
+
+**Fonction générale** Créer un échantillon (*sample*) aléatoire de taille $n$ parmi les éléments d'un ensemble $S$, qui peut être un intervalle d'entiers $[a, b]$ en utilisant la syntaxe `1:6` par exemple.
+
+    sample(S, n, replace=bool)
+
+Le booléen `bool` contrôle si l'échantillonnage se fait avec (`TRUE`) ou sans remise (`FALSE`).
+
+* Avec remise (`replace=TRUE`), la fonction `sample()` réalise l'équivalent de $n$ lancers de dé dont les faces seraient marquées avec les éléments de l'ensemble $S$.
+
+* Sans remise (`replace=FALSE`, l'option par défaut), la fonction `sample()` réalise l'équivalent du tirage de $n$ boules dans une urne contenant des boules marquées avec les éléments de l'ensemble $S$ (sans remise).
+
+**Exemples**
+
+* `sample(1:365, size=23, replace=TRUE)` : dans le paradoxe des anniversaires, choisir 23 dates d'anniversaires
+* `sample(c("H", "T"), size=10, replace=TRUE)` : dix lancers d'une pièce non truquée
+* `sample(1:6, size=8, replace=TRUE)` : huit lancers d'un dé non truqué avec 
+
+**Utilisation avancée** La fonction `sample()` admet un argument `prob` qui permet d'indiquer la probabilité de tirer chaque élément de l'ensemble $S$ (et contredire l'équiprobabilité utilisée par défaut).
+
+Voir aussi les fonctions `anyDuplicated()` et `replicate()`.
