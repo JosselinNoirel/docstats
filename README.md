@@ -1,4 +1,4 @@
-Portail
+Probabilités et statistiques
 ================
 
 The dépôt git contient la documentation des fonctions R utilisées dans
@@ -14,8 +14,8 @@ anniversaires](https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires).
 
 -   [sample](sample)()
 -   [sum](sum)()
+-   [replicate](replicate)()
+-   [Calcul vectorisé](calcul_vectorise)
 
-<!--
-* [replicate](replicate)()
-* [Calcul vectorisé](calcul_vectorise)
--->
+Nous rencontrons également, au détour de considérations algorithmiques
+(complexité, etc.), la fonction [sort](sort)().

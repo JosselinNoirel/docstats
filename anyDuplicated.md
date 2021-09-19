@@ -1,0 +1,47 @@
+La fonction TODO()
+================
+
+Exemple:
+
+b = sample(1:365, size=23, replace=TRUE) anyDuplicated(b)
+
+## Fonction générale
+
+La fonction `anyDuplicated()` permet de savoir si la liste *L* qui lui
+est fournie possède un ou plusieurs éléments dupliqués.
+
+    anyDuplicated(L)
+
+Si `anyDuplicated()` donne la valeur 0, c’est qu’il n’y a pas de valeur
+dupliquée dans la liste. Si `anyDuplicated()` retourne une valeur &gt;
+0, c’est qu’il y a au moins une valeur dupliquée (l’indice de la
+première valeur rencontrée une seconde fois).
+
+Par conséquent, si l’on souhaite tester la présence d’un duplicat avec
+`TRUE` ou `FALSE` :
+
+    anyDuplicated(L) > 0
+
+**Illustrations** Ainsi la liste *c*(8, 4, 10, 2, 5, 3, 1, 9, 6, 7) ne
+contient pas d’élément dupliqué. La liste
+*c*(5, 10, 1, 9, 1, 6, 2, 2, 8, 4) contient au moins un élément
+dupliqué.
+
+## Exemples
+
+-   Application au paradoxe des anniversaires :
+
+``` r
+b = sample(1:365, size=23, replace=TRUE)
+anyDuplicated(b)
+```
+
+    [1] 9
+
+``` r
+anyDuplicated(b) > 0
+```
+
+    [1] TRUE
+
+Voir aussi les fonctions [c](c)().

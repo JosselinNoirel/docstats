@@ -1,10 +1,11 @@
-La fonction `sample`
+La fonction sample()
 ================
 
-**Fonction générale** Créer un échantillon (*sample*) aléatoire de
-taille *n* parmi les éléments d’un ensemble *S*, qui peut être un
-intervalle d’entiers \[*a*, *b*\] en utilisant la syntaxe `1:6` par
-exemple.
+## Fonction générale
+
+Créer un échantillon (*sample*) aléatoire de taille *n* parmi les
+éléments d’un ensemble *S*, qui peut être un intervalle d’entiers
+\[*a*, *b*\] en utilisant la syntaxe `1:6` par exemple.
 
     sample(S, n, replace=bool)
 
@@ -20,7 +21,7 @@ sans remise (`FALSE`).
     urne contenant des boules marquées avec les éléments de l’ensemble
     *S* (sans remise).
 
-**Exemples**
+## Exemples
 
 -   `sample(1:365, size=23, replace=TRUE)` : dans le paradoxe des
     anniversaires, choisir 23 dates d’anniversaires
@@ -29,8 +30,22 @@ sans remise (`FALSE`).
 -   `sample(1:6, size=8, replace=TRUE)` : huit lancers d’un dé non
     truqué avec
 
-**Utilisation avancée** La fonction `sample()` admet un argument `prob`
-qui permet d’indiquer la probabilité de tirer chaque élément de
-l’ensemble *S* (et contredire l’équiprobabilité utilisée par défaut).
+``` r
+sample(1:365, size=23, replace=TRUE)
+```
 
-Voir aussi les fonctions `anyDuplicated()` et `replicate()`.
+     [1] 179  14 195 306 118 299 229 244  14 153  90  91 256 197  91 348 137 355 328
+    [20]  26   7 137 254
+
+## Utilisation avancée
+
+La fonction `sample()` admet un argument `prob` qui permet d’indiquer la
+probabilité de tirer chaque élément de l’ensemble *S* (et contredire
+l’équiprobabilité utilisée par défaut).
+
+**NB** La fonction `sample()` produit des nombres pseudo-aléatoires qui
+dépendent d’une graine aléatoire qui peut être initialisée avec
+[set.seed](set.seed)().
+
+Voir aussi les fonctions [anyDuplicated](anyDuplicated)() et
+[replicate](replicate)().

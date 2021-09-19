@@ -1,5 +1,6 @@
 ---
-title: "Portail"
+title: "Probabilités et statistiques"
+subtitle: "Documentation des fonctions R utilisées en cours"
 output: github_document
 ---
 
@@ -15,8 +16,7 @@ La séance 1, après une présentation du rôle central que peuvent jouer les st
 
 * [sample](sample)()
 * [sum](sum)()
-
-<!--
 * [replicate](replicate)()
 * [Calcul vectorisé](calcul_vectorise)
--->
+
+Nous rencontrons également, au détour de considérations algorithmiques (complexité, etc.), la fonction [sort](sort)().

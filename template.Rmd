@@ -1,0 +1,31 @@
+---
+title: "La fonction TODO()"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, comment=NULL)
+```
+
+## Fonction générale
+
+
+## Exemples
+
+* `XX` :
+
+```{r, include=FALSE}
+set.seed(123)
+```
+
+```{r}
+
+```
+
+## Utilisation avancée
+
+TODO
+
+**NB** TODO
+
+Voir aussi les fonctions TODO
