@@ -1,0 +1,36 @@
+---
+title: "La fonction table()"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, comment=NULL)
+```
+
+## Fonction générale
+
+`table()` dénombre les occurrences des valeurs contenue dans le vecteur $V$ qui lui est passé en argument
+
+    table(V)
+
+## Exemples
+
+On peut lancer (virtuellement) un dé $R = 100$ fois et compter le nombre de uns, de deux, etc., de la façon suivante
+
+```{r, include=FALSE}
+set.seed(123)
+```
+
+```{r}
+R = 100
+throws = sample(1:6, size=R, replace=TRUE)
+table(throws)
+```
+
+Les fréquences peuvent être obtenues en divisant le résultat par $R$
+
+```{r}
+table(throws)/R
+```
+
+Voir aussi la fonction [sample](sample)().

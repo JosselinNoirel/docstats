@@ -1,0 +1,28 @@
+---
+title: "La fonction TODO()"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, comment=NULL)
+```
+
+## Fonction générale
+
+`length()` retourne simplement la longueur du vecteur $V$ qui lui est passé en argument
+
+    unique(V)
+
+## Exemples
+
+Combien de faces différentes obtient-on en lançant un dé six fois?
+
+```{r, include=FALSE}
+set.seed(123)
+```
+
+```{r}
+length(unique(sample(1:6, size=6, replace=TRUE)))
+```
+
+Voir aussi la fonction [unique](unique)().
