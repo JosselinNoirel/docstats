@@ -4,7 +4,7 @@ La fonction unique()
 ## Fonction générale
 
 `unique()` retire toutes les occurrences redondantes des valeurs
-contenue dans le vecteur *V* qui lui est passé en argument
+contenues dans le vecteur *V* qui lui est passé en argument
 
     unique(V)
 
