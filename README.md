@@ -12,10 +12,57 @@ les statistiques dans nos sociétés, introduit les fonctions suivantes,
 notamment en faisant l’expérience du [paradoxe des
 anniversaires](https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires).
 
--   [sample](sample)()
--   [sum](sum)()
--   [replicate](replicate)()
+-   [sample](sample)() — échantillonner (pseudo)-aléatoirement
+-   [sum](sum)() — calculer la somme, compter les occurrences
+-   [replicate](replicate)() — répliquer une expérience aléatoire
 -   [Calcul vectorisé](calcul_vectorise)
 
 Nous rencontrons également, au détour de considérations algorithmiques
 (complexité, etc.), la fonction [sort](sort)().
+
+## Séance 2
+
+La séance 2 a été l’occasion de procéder à une simulation de la
+distribution de cartes pour une partie de Kem’s. Cette simulation devait
+initialement établir la probabilité qu’un ou une joueuse se voit
+distribuer d’entrée de jeu quatre cartes de la même hauteur. On a
+généralisé le problème et calculé la probabilité que, à la suite de la
+distribution des cartes, la meilleure main contienne *k* cartes de
+hauteur identique (*k* ∈ {1, 2, 3, 4}).
+
+Les fonctions suivantes ont été vues:
+
+-   [table](table)()
+-   [unique](unique)()
+-   [length](length)()
+
+Plus secondairement, les fonctions, structures de contrôles et
+opérateurs suivants ont été vus:
+
+-   [%% et %/%](division_entiere) — reste d’une division entière
+-   [floor](floor)()
+-   [function](function)() — définition d’une fonction anonyme
+-   [if – else](if-else)
+-   [log](log)()
+-   [prod](prod)()
+
+## Séance 3: Généralités sur les lois de probabilité
+
+Quasi-paradoxe des anniversaires et lois de probabilité discrètes avec
+les fonctions suivantes
+
+-   [diff](diff)() — différences entre éléments consécutifs d’un vecteur
+-   [plot](plot)() — visualisation des lois de probabilité discrètes
+-   [hist](hist)() — visualisation des lois de probabilité continues
+
+À noter aussi, le recours à l’option `prob` de la fonction
+[sample](sample)().
+
+Espérance mathématique *E*(*X*) et moyenne arithmétique *X̄*. Les
+fonctions suivantes ont été vues:
+
+-   [mean](mean)()
+
+## Séance 3: Lois de probabilité classiques
+
+Loi normale

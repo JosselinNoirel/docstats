@@ -40,7 +40,7 @@ Plus secondairement, les fonctions, structures de contrôles et opérateurs suiv
 * [log](log)()
 * [prod](prod)()
 
-## Séance 3: Lois de probabilité
+## Séance 3: Généralités sur les lois de probabilité
 
 Quasi-paradoxe des anniversaires et lois de probabilité discrètes avec les fonctions suivantes
 
@@ -53,3 +53,7 @@ Quasi-paradoxe des anniversaires et lois de probabilité discrètes avec les fon
 Espérance mathématique $E(X)$ et moyenne arithmétique $\bar{X}$. Les fonctions suivantes ont été vues:
 
 * [mean](mean)()
+
+## Séance 3: Lois de probabilité classiques
+
+Loi normale
