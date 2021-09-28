@@ -1,0 +1,40 @@
+---
+title: "La fonction diff()"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, comment=NULL)
+```
+
+## Fonction générale
+
+`diff()` calcule la différence des éléments consécutifs contenus dans le vecteur *V* qui lui est passé en argument
+
+    diff(V)
+
+Le résultat, si $V$ contient $n$ éléments, contient $n - 1$ valeurs.
+
+## Exemples
+
+Calculer le nombre de jours qui séparent des dates d'anniversaire:
+
+```{r, include=FALSE}
+set.seed(123)
+```
+
+```{r}
+n = 23
+birthdays = sort(sample(1:365, size=n, replace=TRUE))
+diff(birthdays)
+```
+
+**NB** Nous ne tenons pas compte ici de la périodicité de l'année.
+
+## Utilisation avancée
+
+La fonction inverse de `diff()` est [cumsum](cumsum)().
+
+**NB** TODO
+
+Voir aussi les fonctions [sort](sort)().
