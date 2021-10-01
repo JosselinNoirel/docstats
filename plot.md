@@ -44,10 +44,10 @@ plot(table(sims)/R, main='Probability of near matches')
 ordre croissant
 
 ``` r
-k = 1:10
-x = sort(rnorm(k))
+n = 10
+x = sort(rnorm(n))
 
-plot(k, x, main='Random numbers in increasing order')
+plot(1:n, x, main='Random numbers in increasing order')
 ```
 
 ![](plot_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->

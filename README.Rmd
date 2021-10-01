@@ -54,6 +54,6 @@ Espérance mathématique $E(X)$ et moyenne arithmétique $\bar{X}$. Les fonction
 
 * [mean](mean)()
 
-## Séance 3: Lois de probabilité classiques
+## Séance 4: Lois de probabilité classiques
 
 Loi normale

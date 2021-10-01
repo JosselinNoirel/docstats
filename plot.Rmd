@@ -40,9 +40,9 @@ plot(table(sims)/R, main='Probability of near matches')
 **EXEMPLE 2** Représentation de 10 nombres aléatoires normaux triés par ordre croissant
 
 ```{r}
-k = 1:10
-x = sort(rnorm(k))
+n = 10
+x = sort(rnorm(n))
 
-plot(k, x, main='Random numbers in increasing order')
+plot(1:n, x, main='Random numbers in increasing order')
 ```
 
